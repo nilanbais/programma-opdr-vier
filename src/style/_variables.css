@@ -5,8 +5,8 @@
   --primary-color: #f5f5f5;
   --primary-color-darken: #475756;
   --secondary-color: #ff6347;
-  /* --bg-color: linear-gradient(135deg, #139efa86 0%, #ffffff 100%); */
-  --bg-color: black;
+  --bg-color: linear-gradient(135deg, #139efa86 0%, #ffffff 100%);
+  /* --bg-color: black; */
   --bg-viewbox: #0b0e37;
 
   --slider-color: #eae8ff;

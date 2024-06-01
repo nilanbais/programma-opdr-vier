@@ -1,4 +1,9 @@
-@import "_base.csss";
+/* general styling */
+@import "_base.css";
 @import "_variables.css";
 
+/* Component styling */
+@import "_button.css";
+
+/* page section styling */
 @import "_header.css";

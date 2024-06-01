@@ -6,8 +6,3 @@
 body {
   background: var(--bg-color);
 }
-
-.container {
-  width: 100%;
-  max-width: 100vh;
-}

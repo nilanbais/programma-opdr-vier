@@ -1,5 +1,5 @@
 import { getWeatherByLatLon, getWeatherByCity } from "./_weather_report.js";
-import { addWeatherResult } from "./_report_card.js";
+import { addWeatherResultCard } from "./_result_card.js";
 
 // location from input
 const add_location_btn = document.getElementById("add_location_btn");
@@ -18,7 +18,7 @@ add_location_btn.addEventListener('click', async(e) => {
     const weatherReport = await getWeatherByCity(city);
     console.log(weatherReport);
 
-    addWeatherResult(weatherReport);
+    addWeatherResultCard(weatherReport);
 })
 
 user_location_btn.addEventListener('click', async(e) => {

@@ -5,11 +5,35 @@
 }
 
 .result-card {
-  width: 45vh;
+  width: auto;
+  max-width: 14rem;
   height: 100%;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+  margin-bottom: 0.2rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 .result-card img {
   max-width: 100%;
   height: 10rem;
   object-fit: cover;
+}
+.result-card table {
+  width: auto;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #result-card-section {
+    flex-direction: column;
+  }
+  .result-card img {
+    display: none;
+  }
+  .result-card {
+    max-width: 100%;
+    justify-content: flex-start;
+  }
 }

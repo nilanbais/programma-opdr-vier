@@ -63,14 +63,17 @@ function createCard(card_location, weather_code, temp, feel_temp, potent_rain) {
                     <tr>
                         <td>Temperatuur</td>
                         <td>${temp}</td>
+                        <td>°C</td>
                     </tr>
                     <tr>
                         <td>Voelt als</td>
                         <td>${feel_temp}</td>
+                        <td>°C</td>
                     </tr>
                     <tr>
                         <td>Kans op regen</td>
                         <td>${potent_rain}</td>
+                        <td>%</td>
                     </tr>
                 </tbody>
             </table>

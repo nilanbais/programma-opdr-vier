@@ -34,13 +34,13 @@ export async function getWeatherByCity(cityName) {
 }
 
 export async function getCurrentWeather(latitude, longitude) {
-    const url = open_weather_api_env.current_weather_url + '?' + `lat=${latitude}`+ '&' +  `lon=${longitude}` + '&' + `appid=${open_weather_api_env.api_key}`
+    const url = open_weather_api_env.current_weather_url + `?lat=${latitude}&lon=${longitude}&appid=${open_weather_api_env.api_key}&units=metric`
     const result = await getResponse(url);
     return result
 }
 
 export async function getForecast(latitude, longitude) {
-    const url = open_weather_api_env.forecast_url + '?' + `lat=${latitude}`+ '&' +  `lon=${longitude}` + '&' + `appid=${open_weather_api_env.api_key}`
+    const url = open_weather_api_env.forecast_url + `?lat=${latitude}&lon=${longitude}&appid=${open_weather_api_env.api_key}&units=metric`
     const result = await getResponse(url);
     return result
 }
@@ -67,5 +67,6 @@ export function filterFeelTemp(weather_report) {
 
 export function filterPOP(weather_report) {
     //poptential rain
-    return weather_report.list[0].pop
+    const potential_rain_procent = weather_report.list[0].pop * 100
+    return potential_rain_procent;
 }

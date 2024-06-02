@@ -1,0 +1,15 @@
+#result-card-section {
+  display: flex;
+  justify-content: baseline;
+  flex-direction: row;
+}
+
+.result-card {
+  width: 45vh;
+  height: 100%;
+}
+.result-card img {
+  max-width: 100%;
+  height: 10rem;
+  object-fit: cover;
+}
